@@ -30,7 +30,7 @@ svm = SVC(kernel='rbf', gamma=0.1, C=1.0, probability=True)
 svm.fit(X_train, y_train)
 
 # Save the trained model
-with open("./Model/svm_model.pkl", "wb") as f:
+with open("./svm_model.pkl", "wb") as f:
     pickle.dump(svm, f)
 
 # Flask app
